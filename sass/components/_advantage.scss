@@ -1,0 +1,60 @@
+.section-advantage {
+  color: $primery-text-color;
+  background-color: $primery-bcg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantage {
+  display: flex;
+  list-style: none;
+}
+
+.advantage__item {
+  flex-basis: calc(100% / 4);
+  margin-right: $card-set-gap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  &::before {
+    content: "";
+    margin-bottom: 30px;
+    display: block;
+    height: 120px;
+    background-color: $employees-bcg-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.icon__antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon__clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon__diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon__astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.advantage__title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
