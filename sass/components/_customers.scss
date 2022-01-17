@@ -1,31 +1,31 @@
 .section-customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .customers__title {
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin: -15px;
+  justify-content: center;
 }
 
 .customers__item {
-  flex-basis: calc(100% / 6);
-  margin-right: $card-set-gap;
-  width: 170px;
+  flex-basis: calc(100% -15px / 4);
+  margin: 15px;
+  width: 210px;
   height: 92px;
-
-  &:last-child {
-    margin-right: 0px;
-  }
 }
 
 .customers__link {

@@ -1,22 +1,25 @@
 .section-advantage {
   color: $primery-text-color;
   background-color: $primery-bcg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .advantage {
-  display: flex;
+  // display: flex;
   list-style: none;
 }
 
 .advantage__item {
-  flex-basis: calc(100% / 4);
-  margin-right: $card-set-gap;
+  // flex-basis: calc(100% / 4);
+  // margin-right: $card-set-gap;
 
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+
+  margin-bottom: 30px;
+
   &::before {
     content: "";
     margin-bottom: 30px;
@@ -25,6 +28,10 @@
     background-color: $employees-bcg-color;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -50,6 +57,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 
   margin-bottom: 10px;
 }
