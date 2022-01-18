@@ -1,3 +1,14 @@
 .header-box {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: $primery-bcg-color;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
 }
