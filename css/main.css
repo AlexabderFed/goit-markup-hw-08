@@ -884,8 +884,30 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .flex-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .contact-box {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-box {
+    margin-right: 161px;
+  }
 }
 
 .social-box {
@@ -903,6 +925,13 @@ body {
 
 .footer-subscription {
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-subscription {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-social__item {
@@ -1044,6 +1073,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding-top: 208px;
+    padding-right: 159px;
+    padding-left: 159px;
+    padding-bottom: 207px;
+    z-index: 2;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1059,11 +1098,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 
@@ -1089,6 +1125,13 @@ body {
   .modal__btn {
     top: 101px;
     right: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__btn {
+    top: 216px;
+    right: 167px;
   }
 }
 
@@ -1125,12 +1168,7 @@ body {
 
 .modal-form {
   padding: 40px;
-}
-
-@media screen and (max-width: 767px) {
-  .modal-form {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .modal__title {
@@ -1158,14 +1196,9 @@ body {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-}
-
-@media screen and (max-width: 767px) {
-  .modal-form__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .modal-form__name {
@@ -1341,15 +1374,6 @@ textarea:not(:placeholder-shown) {
   background-color: #188ce8;
 }
 
-@media screen and (min-width: 768px) {
-  .modal-form__btn {
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    left: 50%;
-  }
-}
-
 .section-project {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1373,7 +1397,7 @@ textarea:not(:placeholder-shown) {
 
 @media screen and (min-width: 768px) {
   .project-filter {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1390,6 +1414,18 @@ textarea:not(:placeholder-shown) {
 
 .project-filter__item:last-child {
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-filter__item:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-filter__item {
+    margin-bottom: 0px;
+  }
 }
 
 .project-filter__item:not(:last-child) {
@@ -1422,10 +1458,11 @@ textarea:not(:placeholder-shown) {
 
 @media screen and (min-width: 768px) {
   .project__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 30px);
-        flex-basis: calc(100% / 3 - 30px);
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1442,7 +1479,22 @@ textarea:not(:placeholder-shown) {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .project__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .project__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;

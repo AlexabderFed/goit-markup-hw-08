@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   list-style: none;
   @media screen and (min-width: 768px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -22,6 +22,12 @@
   margin-bottom: 15px;
   &:last-child {
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
   }
 }
 .project-filter__item:not(:last-child) {
@@ -45,9 +51,10 @@
     margin-bottom: 0px;
   }
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    margin-bottom: 0px;
   }
 }
 
@@ -60,9 +67,14 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .project__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid $border-color-cards;
   border-right: 1px solid $border-color-cards;

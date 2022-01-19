@@ -67,13 +67,20 @@
 
 .flex-footer {
   text-align: center;
-  // display: flex;
-  // align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
 }
 
 .contact-box {
   // margin-right: 70px;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 161px;
+  }
 }
 .social-box {
   margin-bottom: 60px;
@@ -84,6 +91,10 @@
 }
 .footer-subscription {
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .footer-social__item {

@@ -1,8 +1,6 @@
 .modal-form {
   padding: 40px;
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
+  text-align: center;
 }
 .modal__title {
   color: $title-text-color;
@@ -28,9 +26,7 @@
   letter-spacing: 0.01em;
   color: $primery-text-color;
   margin-bottom: 4px;
-  @media screen and (max-width: 767px) {
-    display: flex;
-  }
+  display: flex;
 }
 .modal-form__name {
   padding-top: 11px;
@@ -166,9 +162,9 @@ textarea:not(:placeholder-shown) {
   &:focus {
     background-color: $hero-button-hover-color;
   }
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-  }
+  // @media screen and (min-width: 768px) {
+  //   position: absolute;
+  //   transform: translateX(-50%);
+  //   left: 50%;
+  // }
 }
