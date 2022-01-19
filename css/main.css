@@ -129,7 +129,7 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 40px;
+    padding: 48px 40px;
   }
 }
 
@@ -199,10 +199,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .nav {
+    margin-left: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 93px;
   }
 }
 
@@ -219,7 +219,6 @@ body {
 .nav__link {
   color: #212121;
   text-decoration: none;
-  font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -275,6 +274,8 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-top: 302px;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -358,12 +359,27 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 64px;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 767px) {
   .mobile-social {
     display: none;
   }
+}
+
+.mobile-social__items {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__items:last-child {
+  border-right: none;
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .mobile-social__link {
@@ -944,6 +960,16 @@ body {
   overflow: scroll;
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding-top: 93px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 94px;
+    z-index: 2;
+  }
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -951,17 +977,20 @@ body {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  min-width: 450px;
-  min-height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .modal__btn {
@@ -982,6 +1011,13 @@ body {
   fill: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .modal__btn {
+    top: 101px;
+    right: 23px;
+  }
+}
+
 .modal__icon {
   width: 11px;
   height: 11px;
@@ -989,6 +1025,12 @@ body {
 
 .modal-form {
   padding: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form {
+    text-align: center;
+  }
 }
 
 .modal__title {
@@ -1016,6 +1058,14 @@ body {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-form__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .modal-form__name {
@@ -1093,8 +1143,9 @@ textarea:not(:placeholder-shown) {
   color: #2196f3;
   text-decoration: underline;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-left: 4px;
   letter-spacing: 0.01em;
 }
 
@@ -1124,8 +1175,8 @@ textarea:not(:placeholder-shown) {
           justify-content: center;
   padding-bottom: 3px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
@@ -1174,11 +1225,7 @@ textarea:not(:placeholder-shown) {
 }
 
 .modal-form__btn {
-  position: absolute;
   bottom: 40px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  left: 50%;
   margin-top: 30px;
   border: none;
   padding: 10px 55px 10px 55px;
@@ -1192,5 +1239,14 @@ textarea:not(:placeholder-shown) {
 
 .modal-form__btn:hover, .modal-form__btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form__btn {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,8 @@
 .modal-form {
   padding: 40px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .modal__title {
   color: $title-text-color;
@@ -25,6 +28,9 @@
   letter-spacing: 0.01em;
   color: $primery-text-color;
   margin-bottom: 4px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
 }
 .modal-form__name {
   padding-top: 11px;
@@ -74,8 +80,11 @@ textarea:not(:placeholder-shown) {
   color: $accent-color;
   text-decoration: underline;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-left: 4px;
+  // font-size: 14px;
+  // line-height: 16px;
   letter-spacing: 0.01em;
 }
 
@@ -97,8 +106,10 @@ textarea:not(:placeholder-shown) {
   justify-content: center;
   padding-bottom: 3px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
@@ -140,10 +151,8 @@ textarea:not(:placeholder-shown) {
 }
 
 .modal-form__btn {
-  position: absolute;
   bottom: 40px;
-  transform: translateX(-50%);
-  left: 50%;
+
   margin-top: 30px;
   border: none;
   padding: 10px 55px 10px 55px;
@@ -156,5 +165,10 @@ textarea:not(:placeholder-shown) {
   &:hover,
   &:focus {
     background-color: $hero-button-hover-color;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
   }
 }
