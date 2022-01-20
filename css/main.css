@@ -739,7 +739,7 @@ body {
   list-style: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .employees {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -791,17 +791,13 @@ body {
         flex-basis: calc(100% / 4);
     margin-right: 30px;
     margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 }
 
 .employees__thumb {
   max-width: 450px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .employees__thumb {
-    max-width: 370px;
-  }
 }
 
 .employees__box {
