@@ -3,33 +3,45 @@
   background-color: $employees-bcg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .employees {
-  // display: flex;
   list-style: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max: width 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * 30px);
     margin-left: calc(-1 * 30px);
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .employees-card__item {
-  // flex-basis: calc(100% / 4);
-  // margin-right: $card-set-gap;
-  // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-  //   0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4);
+    margin-right: $card-set-gap;
     margin-bottom: 0px;
   }
 }
