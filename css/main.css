@@ -739,7 +739,7 @@ body {
   list-style: none;
 }
 
-@media screen and (min-width: 768px) and (max: width 1200px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
   .employees {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -796,6 +796,12 @@ body {
 
 .employees__thumb {
   max-width: 450px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .employees__thumb {
+    max-width: 370px;
+  }
 }
 
 .employees__box {
@@ -1820,7 +1826,7 @@ textarea:not(:placeholder-shown) {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   -webkit-transform: translateY(100%);

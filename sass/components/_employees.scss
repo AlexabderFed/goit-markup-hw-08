@@ -11,12 +11,13 @@
 
 .employees {
   list-style: none;
-  @media screen and (min-width: 768px) and (max: width 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(-1 * 30px);
     margin-left: calc(-1 * 30px);
   }
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -47,6 +48,9 @@
 }
 .employees__thumb {
   max-width: 450px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 370px;
+  }
 }
 .employees__box {
   background-color: $primery-bcg-color;
