@@ -1338,8 +1338,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 
