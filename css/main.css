@@ -590,6 +590,9 @@ body {
   max-width: 1600px;
   height: 400px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 767px) {
