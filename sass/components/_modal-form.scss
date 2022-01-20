@@ -79,9 +79,11 @@ textarea:not(:placeholder-shown) {
   font-size: 12px;
   line-height: 1.17;
   margin-left: 4px;
-  // font-size: 14px;
-  // line-height: 16px;
   letter-spacing: 0.01em;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .agreement__checkbox {
@@ -104,11 +106,15 @@ textarea:not(:placeholder-shown) {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 24px;
+
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 .agreement a {
   margin-left: 5px;
@@ -162,9 +168,4 @@ textarea:not(:placeholder-shown) {
   &:focus {
     background-color: $hero-button-hover-color;
   }
-  // @media screen and (min-width: 768px) {
-  //   position: absolute;
-  //   transform: translateX(-50%);
-  //   left: 50%;
-  // }
 }

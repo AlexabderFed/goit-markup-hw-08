@@ -1273,13 +1273,19 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .backdrop {
     padding-top: 208px;
     padding-right: 159px;
     padding-left: 159px;
     padding-bottom: 207px;
     z-index: 2;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    z-index: 3;
   }
 }
 
@@ -1300,6 +1306,16 @@ body {
   .modal {
     min-width: 450px;
     min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -1328,7 +1344,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal__btn {
     top: 216px;
     right: 167px;
@@ -1501,6 +1517,13 @@ textarea:not(:placeholder-shown) {
   letter-spacing: 0.01em;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
 .agreement__checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1532,6 +1555,13 @@ textarea:not(:placeholder-shown) {
   letter-spacing: 0.03em;
   color: #757575;
   margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .agreement {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .agreement a {
