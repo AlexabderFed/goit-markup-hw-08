@@ -450,13 +450,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 64px;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  margin-top: auto;
+}
+
+@media screen and (max-width: 479px) {
+  .mobile-social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: auto;
+  }
 }
 
 @media screen and (min-width: 767px) {
