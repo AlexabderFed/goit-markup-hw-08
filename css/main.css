@@ -1841,18 +1841,6 @@ textarea:not(:placeholder-shown) {
   overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-  .project__thumb img {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project__thumb img {
-    width: 354px;
-  }
-}
-
 .project__box {
   position: absolute;
   top: 0;
