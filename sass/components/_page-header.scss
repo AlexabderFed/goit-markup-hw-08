@@ -292,6 +292,7 @@
 .mobile-social {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
   font-size: 18px;
   line-height: 1.22;
