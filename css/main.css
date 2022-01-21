@@ -1351,12 +1351,18 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    height: 609px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -1367,6 +1373,8 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1386,20 +1394,6 @@ body {
 .modal__btn:hover, .modal__btn:focus {
   background-color: #ffffff;
   fill: #2196f3;
-}
-
-@media screen and (max-width: 767px) {
-  .modal__btn {
-    top: 101px;
-    right: 23px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal__btn {
-    top: 216px;
-    right: 167px;
-  }
 }
 
 .modal__icon {
